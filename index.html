@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="responsive-header w-full bg-white">
+      <div class="topbar bg-c-primary col-12 bg-light p-2 d-lg-none">
+        <ul
+          class="d-flex justify-content-center align-items-center list-style-none"
+        >
+          <li>
+            <a class="text-dark p-3 fs-4 hover-70" href="#"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a class="text-dark p-3 fs-4 hover-70" href="#"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a class="text-dark p-3 fs-4 hover-70" href="#"
+              ><i class="bi bi-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Navbar -->
+      <div class="menubar">
+        <div class="container-lg p-0">
+          <div
+            class="logo text-center text-lg-start position-lg-absolute mt-lg-1 p-2 p-lg-1 z-4"
+          >
+            <div class="logo-link">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- Social Link -->
+          <div
+            class="social-link d-none d-lg-flex justify-content-end align-items-center w-full pt-3"
+          >
+            <div
+              class="bg-light rounded-circle d-flex justify-content-center align-items-center me-2 size-40"
+            >
+              <a href="#" class="text-dark fs-4"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </div>
+            <div
+              class="bg-light rounded-circle d-flex justify-content-center align-items-center me-2 size-40"
+            >
+              <a href="#" class="text-dark fs-4"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+            <div
+              class="bg-light rounded-circle d-flex justify-content-center align-items-center size-40 me-4"
+            >
+              <a href="#" class="text-dark fs-4"
+                ><i class="bi bi-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <!-- navlinks -->
+          <nav
+            class="navbar navbar-expand-lg justify-content-end px-3 bg-md-light"
+          >
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Isle of Wight - All Blogs</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Budget Friendly Family Fun</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Inspire me</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Holiday planners</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Photo & Video Gallery</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main  -->
+    <main>
+      <!-- Banner -->
+      <div class="banner">
+        <div class="inner">
+          <div
+            class="content w-full text-center font-secondary d-flex flex-column justify-content-center align-items-center text-white"
+          >
+            <h1 class="mb-0 line-8">Discover The Isle of Wight</h1>
+            <p class="line-8">Find your Island Soul: Discover Hidden Gems</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Booking Form -->
+      <div class="booking bg-c-secondary p-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div
+                class="form-container d-flex flex-wrap p-3 gap-3 align-items-end"
+              >
+                <div class="flex-fill">
+                  <label for="destination">Destination Name</label>
+                  <input
+                    class="form-control p-2 w-full"
+                    type="text"
+                    placeholder="Isle of Wight"
+                  />
+                </div>
+
+                <div class="flex-fill flex-lg-fill-none">
+                  <label for="destination">Checkin Date</label>
+                  <input
+                    class="form-control p-2 w-full"
+                    type="date"
+                    placeholder="Isle of Wight"
+                  />
+                </div>
+
+                <div class="flex-fill flex-lg-fill-none">
+                  <label for="destination">Checkout Date</label>
+                  <input
+                    class="form-control p-2 w-full"
+                    type="date"
+                    placeholder="Isle of Wight"
+                  />
+                </div>
+
+                <div class="flex-fill flex-lg-fill-none">
+                  <button
+                    class="btn bg-c-primary search-btn py-2 px-5 w-full text-light"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Content Area -->
+      <div class="text-content py-30">
+        <div class="container">
+          <h2 class="font-secondary">
+            Welcome! Find your Next off the Beaten-Track Adventure on the
+            Stunning Isle of Wight...
+          </h2>
+
+          <p>
+            Nestled like a diamond just a few miles off the South Coast of
+            England, only a short ferry journey across the Solent Channel, the
+            Isle of Wight beckons.
+          </p>
+
+          <p>
+            With its undeniable charm and array of unique attractions there are
+            many fantastic online resources dedicated to the tourist trail. At
+            Island Soul we wanted to provide something different, something that
+            truly uncovers the hidden gems the Island has to share.
+          </p>
+
+          <p>
+            So, as you prepare to set foot on this picturesque island, we have
+            dedicated this travel and activity resource to sharing our passion
+            and knowledge for exploring this beautiful destination in unique and
+            budget-friendly ways. Our local guides provide practical advice and
+            simple ideas to help adventure seekers create affordable,
+            unforgettable memories while venturing off the beaten track on this
+            wonderful island.
+          </p>
+
+          <p>
+            Discover the Isle of Wight, using our inspiring short guides and
+            local recommendations for spending a day or week on the island,
+            ensuring you experience the true essence of the Isle of Wight.
+          </p>
+
+          <p>
+            <b
+              >Check out our
+              <span class="color-secondary">holiday planners</span> and take the
+              headache out of planning your trip!</b
+            >
+          </p>
+
+          <p>
+            <b
+              >Use our <span class="color-secondary">map search</span> function
+              or explore our guides below.</b
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Blog -->
+      <div class="blog bg-light py-50">
+        <div class="container my-5 px-4">
+          <h2 class="font-secondary text-center tracking-2">
+            YOUR JOURNEY TO DISCOVERY BEGINS RIGHT HERE
+          </h2>
+          <p class="lead fw-medium text-center line-8 mb-5">
+            Secret Isle of Wight Travel Guides
+          </p>
+
+          <div class="row">
+            <!-- Left Column -->
+            <div class="col-lg-3 col-md-4 col-sm-12 d-flex flex-column">
+              <div class="card mb-5 border-0 flex-fill">
+                <img
+                  src="./assets/image-1.png"
+                  class="card-img-top"
+                  alt="Enchanted South Wight Image"
+                />
+                <div class="card-body px-0 bg-light">
+                  <p class="card-text fw-bold text-left">
+                    Visit the Enchanted South Wight: A Magical Mystery Tour Off
+                    the Beaten Path on the Isle of Wight
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-5 border-0 flex-fill">
+                <img
+                  src="./assets/image-2.png"
+                  class="card-img-top"
+                  alt="Enchanted South Wight Image"
+                />
+                <div class="card-body px-0 bg-light">
+                  <p class="card-text fw-bold">
+                    Visit the Enchanted South Wight: A Magical Mystery Tour Off
+                    the Beaten Path on the Isle of Wight
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Middle Column -->
+            <div class="col-lg-6 col-md-4 col-sm-12 d-flex">
+              <div class="card border-0 w-100">
+                <img
+                  src="./assets/middle.jpg"
+                  class="card-img-top"
+                  alt="Rainy Days on Isle of Wight"
+                />
+                <div class="card-body px-0 bg-light">
+                  <p class="card-text fw-bold">
+                    Making the Most of Rainy Days on the Isle of Wight: Budget
+                    Friendly Fun Activities for Everyone!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-3 col-md-4 col-sm-12 d-flex flex-column">
+              <div class="card mb-5 border-0 flex-fill">
+                <img
+                  src="./assets/image-3.png"
+                  class="card-img-top"
+                  alt="Enchanted South Wight Image"
+                />
+                <div class="card-body px-0 bg-light">
+                  <p class="card-text fw-bold">
+                    Visit the Enchanted South Wight: A Magical Mystery Tour Off
+                    the Beaten Path on the Isle of Wight
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-5 border-0 flex-fill">
+                <img
+                  src="./assets/image-4.png"
+                  class="card-img-top"
+                  alt="Enchanted South Wight Image"
+                />
+                <div class="card-body px-0 bg-light">
+                  <p class="card-text fw-bold">
+                    Visit the Enchanted South Wight: A Magical Mystery Tour Off
+                    the Beaten Path on the Isle of Wight
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full text-center">
+            <a
+              href="#"
+              class="btn btn-danger px-4 py-2 mt-5 text-uppercase bg-c-primary"
+              >Explore All Guides</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Trip -->
+
+      <div class="container position-relative mt-5">
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <div class="trip">
+              <div class="background-image text-center">
+                <h1
+                  class="display-4 font-weight-bold font-secondary heading-46"
+                >
+                  MAKE THIS YOUR BEST TRIP EVER TO THE ISLAND
+                </h1>
+                <h2 class="h4 mt-3 .font-28">
+                  Let us guide you to amazing places
+                </h2>
+                <p class="mt-4">
+                  Go paddle boarding in crystal clear waters, explore secluded
+                  coves or walk along an exhilarating cliff edge path. Immerse
+                  yourself in history or simply experience the island like a
+                  local - off the beaten track.
+                </p>
+                <p>
+                  Discover your next adventure or plan a unique holiday
+                  experience that can only be found on the Isle of Wight. Don't
+                  miss a new guide, subscribe to our monthly updates!
+                </p>
+                <div class="mt-4">
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Enter your email address"
+                      aria-label="Email address"
+                    />
+                    <button
+                      class="btn bg-c-primary search-btn py-2 px-5 text-light"
+                    >
+                      Send me offers and ideas!
+                    </button>
+                  </div>
+
+                  <!-- <div class="flex-fill flex-lg-fill-none"></div> -->
+                  <!-- <div class="input-group-append">
+                    <button
+                      class="btn idea-btn text-light bg-c-primary"
+                      type="button"
+                    >
+                      Send me offers and ideas!
+                    </button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+      </div>
+
+      <!-- Accordion  -->
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Photo and Video Gallery
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Looking for inspiration? Look through our photos and videos
+                    of the Isle of Wight and see the beautiful scenery waiting
+                    to be explored.
+                    <code>Visit photo wall</code>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Explore the Beaches, Rivers & Sea
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Looking for inspiration? Look through our photos and videos
+                    of the Isle of Wight and see the beautiful scenery waiting
+                    to be explored.
+                    <code>Visit photo wall</code>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Day Trip & Holiday Planners
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Looking for inspiration? Look through our photos and videos
+                    of the Isle of Wight and see the beautiful scenery waiting
+                    to be explored.
+                    <code>Visit photo wall</code>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Hotels & Accomodation
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Looking for inspiration? Look through our photos and videos
+                    of the Isle of Wight and see the beautiful scenery waiting
+                    to be explored.
+                    <code>Visit photo wall</code>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Budget Friendly Family Fun
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Looking for inspiration? Look through our photos and videos
+                    of the Isle of Wight and see the beautiful scenery waiting
+                    to be explored.
+                    <code>Visit photo wall</code>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    Affordable Adventures for All
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Looking for inspiration? Look through our photos and videos
+                    of the Isle of Wight and see the beautiful scenery waiting
+                    to be explored.
+                    <code>Visit photo wall</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+
+      <div class="container-fluid px-0">
+        <div class="row g-0">
+          <!-- Skiing -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 position-relative image-hover-wrapper"
+          >
+            <img
+              src="./assets/skill-1.png"
+              class="img-fluid w-100 h-100"
+              alt="Skiing"
+              style="object-fit: cover"
+            />
+            <div
+              class="position-absolute bottom-0 start-0 w-100 h-100 d-flex align-items-end overlay-gradient"
+            >
+              <div class="p-3 text-white">
+                <h3 class="font-secondary heading-46 line-8">SKIING</h3>
+                <p>
+                  We fill the space content. High-quality, beautiful, solid and
+                  pleasant to...
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Boarding -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 position-relative image-hover-wrapper"
+          >
+            <img
+              src="./assets/skill-2.png"
+              class="img-fluid w-100 h-100"
+              alt="Boarding"
+              style="object-fit: cover"
+            />
+            <div
+              class="position-absolute bottom-0 start-0 w-100 h-100 d-flex align-items-end overlay-gradient"
+            >
+              <div class="p-3 text-white">
+                <h3 class="font-secondary heading-46 line-8">BOARDING</h3>
+                <p>
+                  We fill the space content. High-quality, beautiful, solid and
+                  pleasant to...
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Cycling -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 position-relative image-hover-wrapper"
+          >
+            <img
+              src="./assets/skill-3.png"
+              class="img-fluid w-100 h-100"
+              alt="Cycling"
+              style="object-fit: cover"
+            />
+            <div
+              class="position-absolute bottom-0 start-0 w-100 h-100 d-flex align-items-end overlay-gradient"
+            >
+              <div class="p-3 text-white">
+                <h3 class="font-secondary heading-46 line-8">CYCLING</h3>
+                <p>
+                  We fill the space content. High-quality, beautiful, solid and
+                  pleasant to...
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Hiking -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 position-relative image-hover-wrapper"
+          >
+            <img
+              src="./assets/skill-4.png"
+              class="img-fluid w-100 h-100"
+              alt="Hiking"
+              style="object-fit: cover"
+            />
+            <div
+              class="position-absolute bottom-0 start-0 w-100 h-100 d-flex align-items-end overlay-gradient"
+            >
+              <div class="p-3 text-white">
+                <h3 class="font-secondary heading-46 line-8">HIKING</h3>
+                <p>
+                  We fill the space content. High-quality, beautiful, solid and
+                  pleasant to...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- text-area-2 -->
+      <div class="container my-5">
+        <!-- First Section -->
+        <div class="text-center mb-5 md-px-90">
+          <p class="lead fw-medium">
+            Our team has spent over 40 years discovering and enjoying the most
+            exciting and unique experiences that the Isle of Wight has to offer,
+            and our guides are written by those with first-hand local knowledge
+            for people that want to explore and create their own unique,
+            cost-effective holiday.
+          </p>
+          <p class="lead fw-medium">
+            So you can trust us to help you create the perfect travel itinerary
+            for your one of a kind adventure!
+          </p>
+          <p class="lead fw-medium">
+            Discover your own unique Isle of Wight travel experience by
+            exploring our diverse collection of blogs and guides -
+            <a href="#" class="text-danger fw-medium text-decoration-none"
+              >start your adventure search now...</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="map">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-xl-5">
+              <!-- Second Section -->
+              <div class="position-relative mb-5">
+                <div class="text-white p-4 bg-opacity-6">
+                  <h3
+                    class="text-uppercase heading-46 line-8 mb-0 p-0 font-secondary"
+                  >
+                    Find Your Next Adventure
+                  </h3>
+                  <p class="fw-medium font-28 pe-5">
+                    Search by Location on the Isle of Wight
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="text-white text-center pt-5 position-relative bg-black">
+      <img
+        src="./assets/footer-logo.png"
+        alt="Island Soul Logo"
+        class="mb-4 footer-logo"
+      />
+      <ul class="list-inline mt-100 mb-5">
+        <li class="list-inline-item mx-3">
+          <a href="#" class="text-white text-decoration-none"
+            >Isle of Wight - All Blogs</a
+          >
+        </li>
+        <li class="list-inline-item mx-3">
+          <a href="#" class="text-white text-decoration-none"
+            >Budget Friendly Family Fun</a
+          >
+        </li>
+        <li class="list-inline-item mx-3">
+          <a href="#" class="text-white text-decoration-none">Inspire Me</a>
+        </li>
+        <li class="list-inline-item mx-3">
+          <a href="#" class="text-white text-decoration-none"
+            >Holiday Planners</a
+          >
+        </li>
+        <li class="list-inline-item mx-3">
+          <a href="#" class="text-white text-decoration-none"
+            >Photo and Video Gallery</a
+          >
+        </li>
+      </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <h3 class="font-secondary text-start">
+              Want your Isle of Wight attraction include? Get in touch!
+            </h3>
+            <p class="font-primary text-start fw-normal">
+              Please check opening times and venue availability before
+              travelling.
+            </p>
+          </div>
+          <div class="col-sm-7">
+            <p
+              class="font-primary text-start fw-normal bg-c-tertiary p-3 font-12"
+            >
+              All images original and protected by copyright 2023 all right
+              reserved Secret Isle of Wight. To request any omissions, changes
+              or notify us of errors please contact us. We try our best to keep
+              all information as up to date as possible, but due to the seasonal
+              nature of many businesses details may change at short notice.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-creds bg-dark p-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div
+                class="content d-md-flex justify-content-center align-items-center gap-5 small"
+              >
+                <p class="text-white m-0">
+                  &copy; 2024 islandsoul.co.uk All Rights Reserved.
+                </p>
+                <ul class="list-inline m-0">
+                  <li class="list-inline-item">
+                    <a href="#" class="text-white text-decoration-none"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="text-white text-decoration-none"
+                      >Sitemap</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
